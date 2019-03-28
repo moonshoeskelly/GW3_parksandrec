@@ -5,6 +5,382 @@
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
+	display:block;
 }
 
+body {
+	background-image: url("images/background.jpg");
+	background-size: cover;
+}
+
+.topbar {
+	background: #1f3d31;
+	display: flex;
+	justify-content: center;
+	padding: .5%;
+}
+
+.topbar p {
+	color: #ffffff;
+	margin: 0 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.top-bar-right li, .top-bar-right a {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'Crimson Text', serif;
+	font-size: 1.5rem;
+}
+
+a[href^="tel:"] {
+	color: #ffffff;
+	background: #477d36;
+	text-decoration: none;
+	padding: .4rem;
+	margin: .2rem;
+}
+
+.logo {
+	max-width: 350px;
+	margin-left: 3%;
+}
+
+.mobile-logo {
+	max-width: 350px;
+	margin: 2%auto;
+	width: 80%;
+	display: block;
+}
+
+h1 {
+	font-family: 'Crimson Text', serif;
+	color: #31460D;
+	font-size: 2rem;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #31460D;
+	font-size: 1rem;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.testimony {
+	display: flex;
+	flex-direction: column-reverse;
+	margin: 2% 8%;
+}
+
+.testimony p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	line-height: 2rem;
+	align-self: center;
+}
+
+.testimony-img {
+	object-fit: contain;
+	align-self: flex-start;
+	margin: auto;
+	max-width: 300px;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+main {
+	background: #dbe0da;
+	box-shadow: -1px 0 10px 5px #00000057;
+}
+
+section {
+	box-shadow: -1px 0 3px 1px #00000057;
+	margin: 0 0 8px 0;
+	background: #bdc6c0;
+	width: 100%;
+	padding: 0 .8% 2% .8%;
+}
+
+section p {
+	margin: 2% 0;
+}
+
+article {
+	width: 90%;
+	margin: auto;
+}
+
+article h2 {
+	margin: 6% 0 0 0;
+}
+
+article a {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	color: #31460D;
+	font-weight: bold;
+}
+
+.article-img {
+	max-width: 250px;
+	margin: 2% 0;
+	width: 100%;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	margin-top: 2%;
+	color: #ffffff;
+	background: #1f3d31;
+	font-family: 'Montserrat', sans-serif;
+	font-size: .9rem;
+}
+/*========================================
+*
+*           Slider
+*
+*
+*=========================================*/
+
+.slider {
+	margin: 0 auto;
+	padding: 2%;
+	height: 500px;
+	max-width: 1130px;
+	text-align: center;
+}
+
+.slide_viewer {
+	height: 500px;
+	max-width: 1130px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slide_group {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.slide {
+	display: none;
+	height: 500px;
+	position: absolute;
+	width: 100%;
+}
+
+.slide img {
+	width: 100%;
+}
+
+.slide:first-child {
+	display: block;
+}
+
+.slide:nth-of-type(1) {
+	background: #D7A151;
+}
+
+.slide:nth-of-type(2) {
+	background: #F4E4CD;
+}
+
+.slide:nth-of-type(3) {
+	background: #C75534;
+}
+
+.slide:nth-of-type(4) {
+	background: #D1D1D4;
+}
+
+.slide_buttons {
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+
+a.slide_btn {
+	color: #474544;
+	font-size: 42px;
+	margin: 0 0.175em;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+	color: #428CC6;
+	cursor: pointer;
+}
+
+.directional_nav {
+	height: 50px;
+	margin: 0 auto;
+	max-width: 940px;
+	position: relative;
+	top: -300px;
+}
+
+.previous_btn {
+	bottom: 0;
+	left: 100px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+}
+
+.next_btn {
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	right: 100px;
+	top: 0;
+}
+
+.previous_btn, .next_btn {
+	cursor: pointer;
+	height: 65px;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+	width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+	opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+	.previous_btn {
+		left: 50px;
+	}
+	.next_btn {
+		right: 50px;
+	}
+}
+
+/*========================================
+*
+*           Hamburger Menu
+*
+*
+*=========================================*/
+
+.hamburger{
+	background:none;
+	position:absolute;
+	top:0;
+	right:0;
+	line-height:45px;
+	padding:5px 15px 0px 15px;
+	color:#ffffff;
+	border:0;
+	font-size:1.4em;
+	font-weight:bold;
+	cursor:pointer;
+	outline:none;
+	z-index:10000000000000;
+}
+
+.cross{
+	background:none;
+	position:absolute;
+	top:0px;
+	right:0;
+	padding:7px 15px 0px 15px;
+	color:#999;
+	border:0;
+	font-size:3em;
+	line-height:65px;
+	font-weight:bold;
+	cursor:pointer;
+	outline:none;
+	z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px; top: 3.4%;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/*========================================
+*
+*           720 Media Query
+*
+*
+*=========================================*/
+@media (min-width: 720px) {
+	.menu, .hamburger, .cross, .mobile-logo {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+	}
+
+	.desktop-menu li {
+		display: inline-block;
+	}
+
+	.desktop-menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 1% 0;
+	}
+
+	.desktop-menu .top-bar-left {
+		margin: 0 4%;
+	}
+
+	.desktop-menu .top-bar-right ul li {
+		padding: .5rem;
+	}
+
+	.topbar {
+		justify-content: flex-end;
+	}
+
+	main {
+		margin: 0 3% 0 3%;
+		max-width: 1200px;
+		margin: auto;
+		width: 90%;
+	}
+
+	.testimony {
+		flex-direction: row;
+	}
+
+	.testimony-img {
+		margin: auto 0 auto 2%;
+	}
+
+	.text-boxes {
+		display: flex;
+		justify-content: center;
+		padding: 0 1% 2% 1%;
+	}
+
+	section {
+		width: 30%;
+		margin: 3px;
+	}
+}
