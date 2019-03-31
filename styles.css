@@ -27,6 +27,14 @@ body {
 	align-items: center;
 }
 
+.fade-bar {
+	margin: 25px 0;
+	height: 50px;
+	background: black;
+  background: -webkit-linear-gradient(left, white, black);
+	opacity: .5;
+}
+
 .top-bar-right li, .top-bar-right a {
 	text-decoration: none;
 	color: #ffffff;
