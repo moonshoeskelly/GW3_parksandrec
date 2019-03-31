@@ -13,6 +13,10 @@ body {
 	background-size: cover;
 }
 
+.top-logo {
+	max-height: 60px;
+}
+
 .topbar {
 	background: #1f3d31;
 	display: flex;
@@ -50,6 +54,15 @@ a[href^="tel:"] {
 	margin: .2rem;
 }
 
+
+.logos {
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	flex-direction: column;
+}
+
+
 .logo {
 	max-width: 350px;
 	margin-left: 3%;
@@ -57,10 +70,24 @@ a[href^="tel:"] {
 
 .mobile-logo {
 	max-width: 350px;
-	margin: 2%auto;
+	margin: 2% auto;
 	width: 80%;
 	display: block;
 }
+
+/*
+.pnrlogo {
+	max-width: 350px;
+	margin-left: 3%;
+}
+
+.mobile-pnrlogo {
+	max-width: 350px;
+	margin: 2% auto;
+	width: 80%;
+	display: block;
+}
+*/
 
 h1 {
 	font-family: 'Crimson Text', serif;
@@ -69,13 +96,13 @@ h1 {
 }
 
 h2 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	color: #31460D;
 	font-size: 1rem;
 }
 
 p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 .testimony {
@@ -85,7 +112,7 @@ p {
 }
 
 .testimony p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 	line-height: 2rem;
 	align-self: center;
@@ -130,7 +157,7 @@ article h2 {
 
 article a {
 	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	color: #31460D;
 	font-weight: bold;
 }
@@ -147,7 +174,7 @@ footer {
 	margin-top: 2%;
 	color: #ffffff;
 	background: #1f3d31;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: .9rem;
 }
 /*========================================
@@ -335,7 +362,7 @@ a.slide_btn {
 *
 *=========================================*/
 @media (min-width: 720px) {
-	.menu, .hamburger, .cross, .mobile-logo {
+	.menu, .hamburger, .cross, .mobile-logo, .mobile-pnrlogo {
 		display: none;
 	}
 
