@@ -187,7 +187,35 @@ footer {
 	font-family: 'Nunito', sans-serif;
 	font-size: .9rem;
 }
+/*========================================
+*
+*          Events
+*
+*
+*=========================================*/
+.events {
+	padding: 2%;
+}
 
+.events h1 {
+	text-align: center;
+}
+
+.events img {
+    display: block;
+    margin: 2% auto 2%;
+		max-width: 600px;
+		width: 100%;
+}
+
+.events-text {
+    max-width: 600px;
+    margin: auto;
+}
+
+.events-list {
+		padding: 2% 0 0 0;
+}
 /*========================================
 *
 *           People
@@ -385,7 +413,7 @@ a.slide_btn {
 	outline:none;
 	z-index:10000000000000;
 }
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px; top: 3.4%;}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1; text-align:center; font-size:12px; top: 3.4%;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -524,6 +552,22 @@ a.slide_btn {
 		max-width: 600px;
 		width: 100%;
 		height: auto;
+	}
+}
+
+@media (min-width: 1080px) {
+	.events section {
+		display: flex;
+		margin: 2% 0;
+	}
+
+	.events img {
+		width: 65%;
+		margin: auto;
+	}
+
+	.events-text {
+		margin: 0 0 0 2%;
 	}
 }
 /*========================================
