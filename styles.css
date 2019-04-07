@@ -479,10 +479,9 @@ a.slide_btn {
 	}
 
 	main {
-		margin: 0 3% 0 3%;
-		max-width: 1200px;
+		max-width: 720px;
 		margin: auto;
-		width: 90%;
+		width: 100%;
 	}
 
 	.testimony {
@@ -563,15 +562,16 @@ a.slide_btn {
 	.events section {
 		display: flex;
 		margin: 2% 0;
+		flex-direction: column;
 	}
 
 	.events img {
-		width: 65%;
+		width: 100%;
 		margin: auto;
 	}
 
 	.events-text {
-		margin: 0 0 0 2%;
+		margin: 15px auto;
 	}
 }
 /*========================================
