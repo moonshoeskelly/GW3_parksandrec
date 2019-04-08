@@ -535,7 +535,7 @@ a.slide_btn {
 	.desktop-menu {
 		display: block;
 		width: 90%;
-		max-width: 1200px;
+		max-width: 900px;
 		margin: 2% auto;
 	}
 
@@ -582,7 +582,7 @@ a.slide_btn {
 
 
 	main {
-		max-width: 1200px;
+		max-width: 900px;
 		margin: auto;
 		width: 90%;
 	}
