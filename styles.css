@@ -49,7 +49,7 @@ a[href^="tel:"] {
 
 .top-bar-right li, .top-bar-right a {
 	text-decoration: none;
-	color: #ffffff;
+	color: black;
 	font-family: 'Crimson Text', serif;
 	font-size: 1.5rem;
 }
