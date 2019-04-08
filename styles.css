@@ -52,6 +52,7 @@ a[href^="tel:"] {
 	color: black;
 	font-family: 'Crimson Text', serif;
 	font-size: 1.5rem;
+	margin: 0 5%;
 }
 
 .logos {
@@ -530,23 +531,27 @@ a.slide_btn {
 		display: none;
 	}
 
+
 	.desktop-menu {
 		display: block;
+		width: 90%;
+		max-width: 1200px;
+		margin: 2% auto;
+	}
+
+	.desktop-menu ul {
+		display: flex;
+		justify-content: space-around;
 	}
 
 	.desktop-menu li {
-		display: inline-block;
+		display: block;
 	}
 
 	.desktop-menu {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		margin: 1% 0;
-	}
-
-	.desktop-menu .top-bar-left {
-		margin: 0 4%;
+		justify-content: space-between;
 	}
 
 	.desktop-menu .top-bar-right ul li {
@@ -558,8 +563,12 @@ a.slide_btn {
 		flex-direction: row;
 	}
 
+	.logo{
+		margin-left: 0;
+	}
+
 	.top-logo {
-		margin: 0 2%;;
+		margin: 0 2%;
 	}
 
 	a[href^="tel:"] {
@@ -571,8 +580,9 @@ a.slide_btn {
 		margin: auto 2%;
 	}
 
+
 	main {
-		max-width: 720px;
+		max-width: 1200px;
 		margin: auto;
 		width: 90%;
 	}
