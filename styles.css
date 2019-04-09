@@ -291,20 +291,15 @@ img.parks-pic {
 	padding: 2%;
 }
 
-.events h1 {
-	text-align: center;
-}
-
 .events img {
     display: block;
     margin: 10px auto;
-		max-width: 600px;
 		width: 100%;
 }
 
 .events-text {
-    max-width: 600px;
-    margin: auto;
+	margin: auto;
+	display: flex;
 }
 
 .events-list {
@@ -314,6 +309,26 @@ img.parks-pic {
 .events-text a {
     text-decoration: none;
     color: #4C8809;
+}
+
+.text {
+	margin: 0 0 0 2%;
+}
+
+.date {
+	font-weight: bold;
+	text-align: center;
+	line-height: .8;
+}
+
+.number {
+  color: #4C8809;
+	font-size: 400%;
+}
+
+.month {
+	color: #1E3D31;
+	font-size: 300%;
 }
 /*========================================
 *
