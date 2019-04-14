@@ -179,6 +179,10 @@ footer figure figcaption {
 	margin: 2% 0;
 }
 
+.more-info .camplink{
+	color: #307c16;
+}
+
 article {
 	width: 90%;
 	margin: auto;
