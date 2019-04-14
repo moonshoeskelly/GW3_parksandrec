@@ -16,6 +16,9 @@ html {
   background-size: cover;
 }
 
+
+
+/************************BASICS****************************/
 .top-logo {
 	max-height: 60px;
 	margin: 1rem auto;
@@ -62,7 +65,6 @@ a[href^="tel:"] {
 	flex-direction: column;
 }
 
-
 .logo {
 	max-width: 450px;
 	margin-left: 3%;
@@ -76,23 +78,10 @@ a[href^="tel:"] {
 	display: block;
 }
 
-/*
-.pnrlogo {
-	max-width: 350px;
-	margin-left: 3%;
-}
-.mobile-pnrlogo {
-	max-width: 350px;
-	margin: 2% auto;
-	width: 80%;
-	display: block;
-}
-*/
-
 h1 {
 	font-family: 'Crimson Text', serif;
 	color: #31460D;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 h2 {
@@ -122,6 +111,42 @@ p {
 	font-family: 'Nunito', sans-serif;
 }
 
+.desktop-menu {
+	display: none;
+}
+
+main {
+	background: #dbe0da;
+	box-shadow: -1px 0 10px 5px #00000057;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	margin-top: 2%;
+	color: #ffffff;
+	background: #1f3d31;
+	font-family: 'Nunito', sans-serif;
+	font-size: .9rem;
+}
+
+footer figure img {
+	display: block;
+	margin: 10px auto;
+	max-width: 400px;
+	width: 100%;
+}
+
+footer figure figcaption {
+	margin: 10px auto;
+	max-width: 500px;
+	width: 100%;
+}
+/********************END BASICS*************************/
+
+
+
+/***********************HOME****************************/
 .testimony {
 	display: flex;
 	flex-direction: column-reverse;
@@ -140,15 +165,6 @@ p {
 	align-self: flex-start;
 	margin: auto;
 	max-width: 300px;
-}
-
-.desktop-menu {
-	display: none;
-}
-
-main {
-	background: #dbe0da;
-	box-shadow: -1px 0 10px 5px #00000057;
 }
 
 .more-info {
@@ -184,36 +200,11 @@ article a {
 	margin: 2% 0;
 	width: 100%;
 }
+/*********************END HOME**************************/
 
-footer {
-	text-align: center;
-	padding: 20px;
-	margin-top: 2%;
-	color: #ffffff;
-	background: #1f3d31;
-	font-family: 'Nunito', sans-serif;
-	font-size: .9rem;
-}
 
-footer figure img {
-	display: block;
-	margin: 10px auto;
-	max-width: 400px;
-	width: 100%;
-}
 
-footer figure figcaption {
-	margin: 10px auto;
-	max-width: 500px;
-	width: 100%;
-}
-
-/*========================================
-*
-*          Parks
-*
-*
-*=========================================*/
+/**********************PARKS****************************/
 .parks {
 	margin: 2% 0;
 }
@@ -231,6 +222,14 @@ img.parks-pic {
 	margin: 0 0 2% 0;
 }
 
+.parks-details h3 {
+	font-size: 1.4rem;
+}
+
+.parks h4 {
+	padding-top: 15px;
+}
+
 .amenities {
 	background: #1E3D31;
 	padding: .5rem;
@@ -238,20 +237,19 @@ img.parks-pic {
 }
 
 .amenities-key {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
 .amenities-key section {
-    display: flex;
-		padding: 2%;
-		width: 45%;
+  display: flex;
+	padding: 2%;
+	width: 45%;
 }
 
 .green.box {
-    background: #4C8809;
+  background: #4C8809;
 }
 
 .yellow.box {
@@ -271,44 +269,52 @@ img.parks-pic {
 }
 
 .amenities-colors div {
-    margin: 0 .5rem 0 0;
+  margin: 0 .5rem 0 0;
 }
 
 .box {
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
-		margin: 0 2% 0 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+	margin: 0 2% 0 0;
 }
+/********************END PARKS**************************/
 
-/*========================================
-*
-*          Events
-*
-*
-*=========================================*/
+
+
+/**********************EVENTS***************************/
 .events {
 	padding: 2%;
+	max-width: 750px;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .events img {
-    display: block;
-    margin: 10px auto;
-		width: 100%;
+  display: block;
+  margin: 10px auto;
+	width: 100%;
+}
+
+.events h3 {
+	font-size: 1.3rem;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .events-text {
 	margin: auto;
 	display: flex;
+	padding-bottom: 15px;
 }
 
 .events-list {
-		padding: 2% 0 0 0;
+	padding: 2% 0 0 0;
 }
 
 .events-text a {
-    text-decoration: none;
-    color: #4C8809;
+  text-decoration: none;
+  color: #4C8809;
 }
 
 .text {
@@ -319,23 +325,23 @@ img.parks-pic {
 	font-weight: bold;
 	text-align: center;
 	line-height: .8;
+	padding-top: 9px;
 }
 
 .number {
   color: #4C8809;
-	font-size: 400%;
+	font-size: 350%;
 }
 
 .month {
 	color: #1E3D31;
-	font-size: 300%;
+	font-size: 250%;
 }
-/*========================================
-*
-*           People
-*
-*
-*=========================================*/
+/********************END EVENTS**************************/
+
+
+
+/**********************PEOPLE****************************/
 .character {
 	display: flex;
 	flex-direction: column;
@@ -351,20 +357,18 @@ img.parks-pic {
 	max-width: 300px;
 }
 
-.whos.who {
+.whos-who {
     padding: 2%;
 }
 
-.whos.who h1 {
+.whos-who h1 {
     text-align: center;
 }
-/*========================================
-*
-*           Slider
-*
-*
-*=========================================*/
+/********************END PEOPLE****************************/
 
+
+
+/*********************SLIDER*******************************/
 .slider {
 	margin: 0 auto;
 	padding: 2%;
@@ -488,14 +492,11 @@ a.slide_btn {
 		right: 50px;
 	}
 }
+/*****************END SLIDER*******************************/
 
-/*========================================
-*
-*           Hamburger Menu
-*
-*
-*=========================================*/
 
+
+/******************HAMBURGER MENU**************************/
 .hamburger{
 	background:none;
 	position:absolute;
@@ -535,32 +536,11 @@ a.slide_btn {
 .menu ul li a:hover {  color: #f1f1f1; text-decoration:none;}
 .menu a{text-decoration:none; color:#f1f1f1;}
 .menu a:hover{text-decoration:none; color:#f1f1f1;}
+/***************END HAMBURGER MENU***********************/
 
-/***********NAVIGATION ANIMATION*********************/
 
-/* basic menu styles
-.block-menu {
-	display: block;
-	background: #000;
-}
 
-.block-menu li {
-	display: inline-block;
-}
-
-.block-menu li a {
-	color: #fff;
-	display: block;
-	text-decoration: none;
-	font-family: 'Passion One', Arial, sans-serif;
-	font-smoothing: antialiased;
-	text-transform: uppercase;
-	overflow: visible;
-	line-height: 20px;
-	font-size: 24px;
-	padding: 15px 10px;
-} */
-
+/***************NAVIGATION ANIMATION*********************/
 /* animation start */
 .three-d {
 	perspective: 200px;
@@ -614,29 +594,91 @@ a.slide_btn {
 	box-sizing: border-box;
 	line-height: 1px;
 }
-
 /**********END NAVIGATION ANIMATION***************/
+
+
+
+/***********NAVIGATION ANIMATION DESKTOP*********************/
+/* animation start */
+.three-d-desk {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+
+}
+
+/* complete the animation */
+.three-d-desk:hover .three-d-box-desk,
+.three-d-desk:focus .three-d-box-desk {
+	transform: translateZ(-25px) rotateX(90deg);
+}
+
+.three-d-box-desk {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*
+	put the "front" and "back" elements into place
+*/
+.front-desk {
+	transform: rotatex(0deg) translatez(25px);
+	top: 5px;
+	left: -10px;
+	line-height: 1px;
+	padding: 15px 10px;
+}
+
+.back-desk {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+	left: -10px;
+	padding: 5px 10px;
+}
+
+.front-desk, .back-desk {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: none;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+/**********END NAVIGATION ANIMATION DESKTOP***************/
+
+
+
+/********************500 MEDIA QUERY**************************/
 @media (min-width: 500px) {
 	img.parks-pic {
     max-width: 40%;
+		width: 400px;
 	}
 
 	.parks {
 		display: flex;
 	}
 }
+/******************END 500 MEDIA QUERY************************/
 
-/*========================================
-*
-*           720 Media Query
-*
-*
-*=========================================*/
+
+
+/*********************720 MEDIA QUERY*************************/
 @media (min-width: 720px) {
 	.menu, .hamburger, .cross, .mobile-logo, .mobile-pnrlogo {
 		display: none;
 	}
-
 
 	.desktop-menu {
 		display: block;
@@ -712,99 +754,11 @@ a.slide_btn {
 		margin: 3px;
 	}
 }
-
-/***********NAVIGATION ANIMATION DESKTOP*********************/
-
-/* basic menu styles
-.block-menu {
-	display: block;
-	background: #000;
-}
-
-.block-menu li {
-	display: inline-block;
-}
-
-.block-menu li a {
-	color: #fff;
-	display: block;
-	text-decoration: none;
-	font-family: 'Passion One', Arial, sans-serif;
-	font-smoothing: antialiased;
-	text-transform: uppercase;
-	overflow: visible;
-	line-height: 20px;
-	font-size: 24px;
-	padding: 15px 10px;
-} */
-
-/* animation start */
-.three-d-desk {
-	perspective: 200px;
-	transition: all .07s linear;
-	position: relative;
-	cursor: pointer;
-
-}
-
-/* complete the animation */
-.three-d-desk:hover .three-d-box-desk,
-.three-d-desk:focus .three-d-box-desk {
-	transform: translateZ(-25px) rotateX(90deg);
-}
-
-.three-d-box-desk {
-	transition: all .3s ease-out;
-	transform: translatez(-25px);
-	transform-style: preserve-3d;
-	pointer-events: none;
-	position: absolute;
-	top: -5px;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-/*
-	put the "front" and "back" elements into place
-*/
-.front-desk {
-	transform: rotatex(0deg) translatez(25px);
-	top: 5px;
-	left: -10px;
-	line-height: 1px;
-	padding: 15px 10px;
-}
-
-.back-desk {
-	transform: rotatex(-90deg) translatez(25px);
-	color: #ffe7c4;
-	left: -10px;
-	padding: 5px 10px;
-}
-
-.front-desk, .back-desk {
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: none;
-	color: white;
-	pointer-events: none;
-	box-sizing: border-box;
-}
+/*******************END 720 MEDIA QUERY**********************/
 
 
-/**********END NAVIGATION ANIMATION DESKTOP***************/
 
-/*========================================
-*
-*           800 Media Query
-*
-*
-*=========================================*/
-
+/*********************800 MEDIA QUERY*********************/
 @media (min-width: 800px) {
 	.character {
 		flex-direction: row;
@@ -818,22 +772,15 @@ a.slide_btn {
 		max-width: 300px;
 	}
 
-.whos.who h1 {
+	.whos-who h1 {
     text-align: start;
-	}
-
-	.parks-details {
-	  background-color: #eaeaea;
-	  display: block;
-	  width: 200px;
-	  height: 200px;
-	  padding: 1em;
-	  overflow-y: scroll;
-  	text-align: center;
+		padding-left: 15px;
 	}
 
 	.parks {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.parks-page {
@@ -860,12 +807,14 @@ a.slide_btn {
 }
 
 	.parks-text {
-		width: 60%;
+		width: 90%;
 		text-align: left;
+		padding-top: 15px;
 	}
 
 	img.parks-pic {
-	  max-width: 40%;
+	  max-width: 60%;
+		width: 400px;
 	}
 
 	.parks-side {
@@ -888,14 +837,11 @@ a.slide_btn {
 		margin: 5% 0;
 	}
 }
+/******************END 800 MEDIA QUERY*********************/
 
-/*========================================
-*
-*           1000 Media Query
-*
-*
-*=========================================*/
 
+
+/********************1000 MEDIA QUERY*********************/
 @media (min-width: 1000px) {
 	.people {
 	    display: flex;
@@ -916,8 +862,17 @@ a.slide_btn {
 		width: 100%;
 		height: auto;
 	}
+
+	.whos-who h1{
+		padding-left: 30px;
+	}
 }
 
+/******************END 1000 MEDIA QUERY*********************/
+
+
+
+/********************1080 MEDIA QUERY***********************/
 @media (min-width: 1080px) {
 	.events section {
 		display: flex;
@@ -934,15 +889,33 @@ a.slide_btn {
 		margin: 15px auto;
 	}
 }
-/*========================================
-*
-*           850-720 Media Query
-*
-*
-*=========================================*/
+/*****************END 1080 MEDIA QUERY*********************/
 
-@media (max-width: 850px) and (min-width: 720px) {
+
+
+/***************720 to 850 MEDIA QUERY*********************/
+@media (min-width: 720px) and (max-width: 850px) {
 	.fade-bar {
 		width: 60%;
 	}
+}
+/**************END 720 to 850 MEDIA QUERY******************/
+
+
+
+/******************CSS ANIMATION***************************/
+.lil-seb {
+  position: absolute;
+  top: 20px;
+  right: -900px;
+  animation: lilsebcross 11s .5s forwards linear;
+}
+
+@keyframes lilsebcross {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-2500px);
+  }
 }
