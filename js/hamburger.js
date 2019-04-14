@@ -1,3 +1,5 @@
+//HAMBURGER MENU
+
 $( document ).ready(function() {
 
 $( ".cross" ).hide();
