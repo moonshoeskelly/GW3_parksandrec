@@ -219,7 +219,7 @@ article a {
 
 /**********************PARKS****************************/
 .parks {
-	margin: 2% 0;
+	margin: 10px 3%;
 }
 
 img.parks-pic {
@@ -237,6 +237,7 @@ img.parks-pic {
 
 .parks-details h3 {
 	font-size: 1.4rem;
+	padding-left: 12px;
 }
 
 .parks h4 {
@@ -682,6 +683,10 @@ a.slide_btn {
 	.parks {
 		display: flex;
 	}
+
+	.parks-details h3 {
+		padding-left: 3%;
+	}
 }
 /******************END 500 MEDIA QUERY************************/
 
@@ -812,6 +817,10 @@ a.slide_btn {
 		padding: 1em;
 		overflow-y: scroll;
 		text-align: center;
+	}
+
+	.parks-details h3 {
+		padding-left: 0;
 	}
 
 	.parks-side {
