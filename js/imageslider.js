@@ -1,89 +1,27 @@
-$('.slider').each(function() {
-  var $this = $(this);
-  var $group = $this.find('.slide_group');
-  var $slides = $this.find('.slide');
-  var bulletArray = [];
-  var currentIndex = 0;
-  var timeout;
+var images = [ "images/slide1.jpg",
+"images/slide2.jpg",
+"images/slide3.jpg",
+"images/slide4.jpg",
+];
 
-  function move(newIndex) {
-    var animateLeft, slideLeft;
+var img = document.getElementById("slider-img");
+img.setAttribute("src", images[0])
 
-    advance();
+var total = images.length;
+var imagecounter = 0;
 
-    if ($group.is(':animated') || currentIndex === newIndex) {
-      return;
-    }
-
-    bulletArray[currentIndex].removeClass('active');
-    bulletArray[newIndex].addClass('active');
-
-    if (newIndex > currentIndex) {
-      slideLeft = '100%';
-      animateLeft = '-100%';
-    } else {
-      slideLeft = '-100%';
-      animateLeft = '100%';
-    }
-
-    $slides.eq(newIndex).css({
-      display: 'block',
-      left: slideLeft
-    });
-    $group.animate({
-      left: animateLeft
-    }, function() {
-      $slides.eq(currentIndex).css({
-        display: 'none'
-      });
-      $slides.eq(newIndex).css({
-        left: 0
-      });
-      $group.css({
-        left: 0
-      });
-      currentIndex = newIndex;
-    });
+function slider () {
+  if (imagecounter <= total) {
+    imagecounter++;
   }
 
-  function advance() {
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      if (currentIndex < ($slides.length - 1)) {
-        move(currentIndex + 1);
-      } else {
-        move(0);
-      }
-    }, 4000);
+  if (imagecounter == total) {
+    imagecounter = 0;
   }
 
-  $('.next_btn').on('click', function() {
-    if (currentIndex < ($slides.length - 1)) {
-      move(currentIndex + 1);
-    } else {
-      move(0);
-    }
-  });
+document.getElementById("slider-img");
+img.setAttribute("src", images[imagecounter]);
+}
 
-  $('.previous_btn').on('click', function() {
-    if (currentIndex !== 0) {
-      move(currentIndex - 1);
-    } else {
-      move(3);
-    }
-  });
-
-  $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
-
-    if (index === currentIndex) {
-      $button.addClass('active');
-    }
-    $button.on('click', function() {
-      move(index);
-    }).appendTo('.slide_buttons');
-    bulletArray.push($button);
-  });
-
-  advance();
-});
+// Change the time each image is displayed in milliseconds
+setInterval(slider, 5000);
