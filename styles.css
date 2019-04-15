@@ -145,7 +145,7 @@ footer {
 
 .eagleton:hover{
 	transform: scale(2.5) translate(-80px, 10px);
-	transition: .1s;
+	transition: .4s;
 }
 
 footer figure figcaption {
